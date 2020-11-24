@@ -19,13 +19,13 @@ document.querySelector("#pause").addEventListener("click", function() {
 
 document.querySelector("#slower").addEventListener("click", function(){
 	var vid = document.getElementById("myVideo");
-	vid.playbackRate = playbackspeed*0.9;
+	vid.playbackRate = vid.playbackRate*0.9;
 	console.log(vid.playbackRate);
 });
 
 document.querySelector("#faster").addEventListener("click", function(){
 	var vid = document.getElementById("myVideo");
-	vid.playbackRate = playbackspeed*1.1;
+	vid.playbackRate = vid.playbackRate*1.1;
 	console.log(vid.playbackRate);
 });
 
